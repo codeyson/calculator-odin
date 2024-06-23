@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(206, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: black;
+    padding: 10px 20px 10px;
+    border-radius: 12px;
+
+
+
+}
+
+.buttons {
+    width: 100px;
+    height: 100px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 25px;
+    border-radius: 50px;
+}
