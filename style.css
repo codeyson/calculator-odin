@@ -18,6 +18,7 @@ body {
     border: 1px solid rgb(17, 17, 12);
     padding: 20px;
     border-radius: 16px;
+    background-color: rgb(62, 150, 152);    ;
 }
 
 input {
@@ -42,6 +43,7 @@ width: 65px;
 height: 60px;
 margin: 10px;
 border-radius: 30px;
+background-color: rgba(154, 202, 234, 0.806);
 }
 
 .equalbtn {
@@ -49,5 +51,5 @@ border-radius: 30px;
 }
 
 .operator {
-    background-color: aqua;
+    background-color: rgb(23, 221, 221);
 }
