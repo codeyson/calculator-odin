@@ -26,12 +26,10 @@ function operate(a, b, operator) {
 
 
   const display = document.querySelector(".display");
-
-  const btn = document.querySelector(".buttons");
-
-  function alertFunction() {
-    alert("YAY! YOU DID IT!");
-  }
-
-  btn.addEventListener("click", alertFunction);
+  const buttons = document.querySelectorAll(".buttons");
   
+  buttons.forEach(button => {
+    button.addEventListener("click", event => {
+      display.value += event.target.value;
+    });
+  });
