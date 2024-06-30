@@ -12,36 +12,37 @@
         <input type="text" class="display" >
         <div class="buttons">
             <div>
-                <button class="operator" value=''>AC</button>
-                <button class="operator" value="">DEL</button>
-                <button class="operator" value="%">%</button>
-                <button class="operator" value="/">/</button>
+            <button class="operator" onclick="clearDisplay()" >AC</button>
+            <button class="operator" onclick="backspace()">DEL</button>
+            <button class="operator" onclick="getOperator('%')" >%</button>
+            <button class="operator" onclick="getOperator('/')" >/</button>
+            </div> 
+            <div>
+                <button class="operand"  onclick="getNum(7)">7</button>
+                <button class="operand"  onclick="getNum(8)">8</button>
+                <button class="operand"  onclick="getNum(9)">9</button>
+                <button class="operator" onclick="getOperator('x')">x</button>
             </div>
             <div>
-                <button class="operand" value="7">7</button>
-                <button class="operand" value="8">8</button>
-                <button class="operand" value="9">9</button>
-                <button class="operator" value="x">x</button>
+                <button class="operand"  onclick="getNum(4)">4</button>
+                <button class="operand"  onclick="getNum(5)">5</button>
+                <button class="operand"  onclick="getNum(6)">6</button>
+                <button class="operator" onclick="getOperator('-')">-</button>
             </div>
             <div>
-                <button class="operand" value="4">4</button>
-                <button class="operand" value="5">5</button>
-                <button class="operand" value="6">6</button>
-                <button class="operator" value="-">-</button>
+                <button class="operand"  onclick="getNum(1)">1</button>
+                <button class="operand"  onclick="getNum(2)">2</button>
+                <button class="operand"  onclick="getNum(3)">3</button>
+                <button class="operator" onclick="getOperator('+')">+</button>
             </div>
             <div>
-                <button class="operand" value="1">1</button>
-                <button class="operand" value="2">2</button>
-                <button class="operand" value="3">3</button>
-                <button class="operator" value="+">+</button>
-            </div>
-            <div>
-                <button class="operand" value="00">00</button>
-                <button class="operand" value="0">0</button>
-                <button class="operand" value=".">.</button>
-                <button class="equalbtn" value="=">=</button>
+                <button class="operand"  onclick="getNum('00')">00</button>
+                <button class="operand"  onclick="getNum(0)">0</button>
+                <button class="operand"  onclick="getNum('.')">.</button>
+                <button class="equalbtn" onclick="calculate()">=</button>
             </div>
         </div>
     </div>
 </body>
+
 </html>
